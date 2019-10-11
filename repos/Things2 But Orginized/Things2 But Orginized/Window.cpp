@@ -19,7 +19,7 @@ Window::WindowClass::WindowClass() noexcept : hInst(GetModuleHandle(nullptr)) //
 	wc.hbrBackground = nullptr;
 	wc.lpszMenuName = nullptr;
 	wc.lpszClassName = getName(); //*NEW*
-	wc.hIconSm = static_cast<HICON>(LoadImage(hInst, MAKEINTRESOURCE(IDI_ICON2), IMAGE_ICON, 16, 16, 0)); // Line 16 (wc.hIcon)
+	wc.hIconSm = static_cast<HICON>(LoadImage(hInst, MAKEINTRESOURCE(IDI_ICON2), IMAGE_ICON, 16, 16, 0)); // Line 17 (wc.hIcon)
 	
 	RegisterClassEx(&wc);
 }
@@ -59,27 +59,40 @@ Window::Window(int width, int height, const char* name) noexcept
 	ShowWindow(hWnd, SW_SHOWDEFAULT);
 }
 
-Window::~Window()
+Window::~Window() //Deconstutor
 {
 	DestroyWindow(hWnd);
 }
 
 LRESULT WINAPI Window::handleMSGSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept
 {
+	//Use create parameter passed in from CreateWindow() to store window class pointer at WINAPI 
 	if (msg == WM_NCCREATE)
 	{
+		//extract pointer to window class from creation data
 		const CREATESTRUCTW* const pCreate = reinterpret_cast<CREATESTRUCTW*>(lParam);
 		Window* const pWnd = static_cast<Window*>(pCreate->lpCreateParams);
+
+		//set WINAPI-managed user data to store pointer to window class
 		SetWindowLongPtr(hWnd, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(pWnd));
+
+		//set message proc to normal (not setup) handler
 		SetWindowLongPtr(hWnd, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(&Window::handleMSGThunk));
+		
+		//forward message to window class handleer
 		return pWnd->handleMSG(hWnd, msg, wParam, lParam);
 	}
+
+	//if we get a message before "WM_NCCREATE" message, it will go to the default handler
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
 LRESULT WINAPI Window::handleMSGThunk(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept
 {
+	//retrieve pointer to window class
 	Window* const pWnd = reinterpret_cast<Window*>(GetWindowLongPtr(hWnd, GWLP_USERDATA));
+
+	//forward message to window class handler
 	return pWnd->handleMSG(hWnd, msg, wParam, lParam);
 }
 
