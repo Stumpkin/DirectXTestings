@@ -19,7 +19,7 @@ Window::WindowClass::WindowClass() noexcept : hInst(GetModuleHandle(nullptr)) //
 	wc.hbrBackground = nullptr;
 	wc.lpszMenuName = nullptr;
 	wc.lpszClassName = getName(); //*NEW*
-	wc.hIconSm = static_cast<HICON>(LoadImage(hInst, MAKEINTRESOURCE(IDI_ICON2), IMAGE_ICON, 16, 16, 0)); // Line 16 (wc.hIcon)
+	wc.hIconSm = static_cast<HICON>(LoadImage(hInst, MAKEINTRESOURCE(IDI_ICON2), IMAGE_ICON, 16, 16, 0)); // Line 17 (wc.hIcon)
 	
 	RegisterClassEx(&wc);
 }
