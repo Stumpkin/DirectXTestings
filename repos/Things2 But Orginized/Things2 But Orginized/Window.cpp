@@ -218,6 +218,23 @@ LRESULT Window::handleMSG(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noe
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
+optional<int> Window::ProcessMessage()
+{
+	MSG msg;
+	while (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
+	{
+		if (msg.message == WM_QUIT) //checks if the message quits
+		{
+			return msg.wParam;
+		}
+
+		TranslateMessage(&msg);
+		DispatchMessage(&msg);
+
+	}
+
+	return {}; // return an empty optional if there are no messages left
+}
 
 // Windows Catcher / Exception definition
 

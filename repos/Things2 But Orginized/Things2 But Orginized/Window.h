@@ -3,6 +3,7 @@
 #include "Catcher.h"
 #include "Keyboard.h"
 #include "Mouse.h"
+#include <optional>
 
 using namespace std;
 
@@ -47,6 +48,7 @@ public:
 	Window(const Window&) = delete;
 	Window& operator = (const Window&) = delete;
 	void setTitle(const string& title);
+	static optional<int> ProcessMessage();
 
 private:
 	static LRESULT CALLBACK handleMSGSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept;
