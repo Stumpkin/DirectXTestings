@@ -1,0 +1,147 @@
+﻿  App.cpp
+  class template optional is only available with C++17 or later.
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,44): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,45): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,39): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\App.cpp(12,38): error C2039: 'ProcessMessage': is not a member of 'Window'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(10): message : see declaration of 'Window'
+  Catch.cpp
+  Keyboard.cpp
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\App.cpp(12,6): error C3861: 'ProcessMessage': identifier not found
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\App.cpp(12,6): error C3861: class template optional is only available with C++17 or later.
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(9,6): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(9,14): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(9,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(9,42): error C2039: 'ReadKey': is not a member of 'Keyboard'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(7): message : see declaration of 'Keyboard'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(10,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(10,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(25,6): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(25,14): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(25,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(25,14): error C2086: 'int optional': redefinition
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(9): message : see declaration of 'optional'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(25,31): error C2039: 'ReadChar': is not a member of 'Keyboard'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(7): message : see declaration of 'Keyboard'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(26,1): error C2143: syntax error: missing ';' before '{'
+  main.cpp
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(26,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.cpp(26,1): error C2447: class template optional is only available with C++17 or later.
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,44): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,45): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Mouse.cpp
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,39): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,39): error C2238: class template optional is only available with C++17 or later.
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,44): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,45): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,39): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(12,9): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(12,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(12,34): error C2039: 'ReadRawDelta': is not a member of 'Mouse'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(8): message : see declaration of 'Mouse'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(13,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(13,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(48,9): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(48,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(48,9): error C2086: 'int optional': redefinition
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(12): message : see declaration of 'optional'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(48,31): error C2039: 'Read': is not a member of 'Mouse'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(8): message : see declaration of 'Mouse'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(49,1): error C2143: syntax error: missing ';' before '{'
+  Window.cpp
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(49,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.cpp(49,1): error C2447: class template optional is only available with C++17 or later.
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(48,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Keyboard.h(53,41): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(81,44): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,7): error C2039: 'optional': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\bitset(20): message : see declaration of 'std'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Mouse.h(87,45): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(51,39): error C2238: unexpected token(s) preceding ';'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.cpp(221,9): error C2143: syntax error: missing ';' before '<'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.cpp(221,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.cpp(221,23): error C2039: 'ProcessMessage': is not a member of 'Window'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.h(10): message : see declaration of 'Window'
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.cpp(222,1): error C2143: syntax error: missing ';' before '{'
+  Generating Code...
+C:\Users\Jalen\DirectXTestings\repos\Things2 But Orginized\things2 but orginized\Window.cpp(222,1): error C2447: '{': missing function header (old-style formal list?)
