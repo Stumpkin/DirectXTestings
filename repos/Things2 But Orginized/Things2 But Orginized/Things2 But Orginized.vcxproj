@@ -136,11 +136,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Catch.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Catcher.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Mouse.h" />
     <ClInclude Include="OhWindows.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Window.h" />

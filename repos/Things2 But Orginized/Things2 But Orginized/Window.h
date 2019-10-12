@@ -1,6 +1,8 @@
 #pragma once
 #include "OhWindows.h"
 #include "Catcher.h"
+#include "Keyboard.h"
+#include "Mouse.h"
 
 using namespace std;
 
@@ -44,11 +46,16 @@ public:
 	~Window();
 	Window(const Window&) = delete;
 	Window& operator = (const Window&) = delete;
+	void setTitle(const string& title);
 
 private:
 	static LRESULT CALLBACK handleMSGSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept;
 	static LRESULT CALLBACK handleMSGThunk(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept;
 	LRESULT handleMSG(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept;
+
+public:
+	Keyboard kbd;
+	Mouse mouse;
 
 private:
 	int width;

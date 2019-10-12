@@ -55,7 +55,7 @@ Window::Window(int width, int height, const char* name)
 	wr.bottom = height + wr.top;
 	AdjustWindowRect(&wr, WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, FALSE);
 
-	if (FAILED(AdjustWindowRect(&wr, WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, FALSE)))
+	if (AdjustWindowRect(&wr, WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, FALSE) == 0)
 	{
 		throw CHWND_LAST_EXCEPT();
 	}
@@ -79,6 +79,14 @@ Window::~Window() //Deconstutor
 	DestroyWindow(hWnd);
 }
 
+void Window::setTitle(const string& title)
+{
+	if (SetWindowText(hWnd, title.c_str()) == 0)
+	{
+		throw CHWND_LAST_EXCEPT();
+	}
+}
+
 LRESULT WINAPI Window::handleMSGSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept
 {
 	//Use create parameter passed in from CreateWindow() to store window class pointer at WINAPI 
@@ -97,7 +105,7 @@ LRESULT WINAPI Window::handleMSGSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM
 		//forward message to window class handleer
 		return pWnd->handleMSG(hWnd, msg, wParam, lParam);
 	}
-
+	
 	//if we get a message before "WM_NCCREATE" message, it will go to the default handler
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
@@ -115,7 +123,94 @@ LRESULT Window::handleMSG(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noe
 {
 	switch (msg)
 	{
+	/********************Mouse Messages***************************/
+	case WM_MOUSEMOVE:
+	{
+		POINTS pt = MAKEPOINTS(lParam);
+		if (pt.x >= 0 && pt.x < width && pt.y >= 0 && pt.y < height)
+		{
+			mouse.OnMouseMove(pt.x, pt.y);
+			if (!mouse.IsInWindow())
+			{
+				SetCapture(hWnd);
+				mouse.OnMouseEnter();
+			}
+		}
 
+		else
+		{
+			if (wParam & (MK_LBUTTON | MK_RBUTTON))
+			{
+				mouse.OnMouseMove(pt.x, pt.y);
+			}
+
+			else
+			{
+				ReleaseCapture();
+				mouse.OnMouseLeave();
+			}
+		}
+		
+	}
+
+	case WM_LBUTTONDOWN:
+	{
+		const POINTS pt = MAKEPOINTS(lParam);
+		mouse.OnLeftPressed(pt.x, pt.y);
+		break;
+	}
+
+	case WM_RBUTTONDOWN:
+	{
+		const POINTS pt = MAKEPOINTS(lParam);
+		mouse.OnRightPressed(pt.x, pt.y);
+		break;
+	}
+
+	case WM_LBUTTONUP:
+	{
+		const POINTS pt = MAKEPOINTS(lParam);
+		mouse.OnLeftReleased(pt.x, pt.y);
+		break;
+	}
+
+	case WM_RBUTTONUP:
+	{
+		const POINTS pt = MAKEPOINTS(lParam);
+		mouse.OnRightReleased(pt.x, pt.y);
+		break;
+	}
+
+	case WM_MOUSEWHEEL:
+	{
+		const POINTS pt = MAKEPOINTS(lParam);
+		const int delta = GET_WHEEL_DELTA_WPARAM(wParam);
+		mouse.OnWheelDelta(pt.x, pt.y, delta);
+	}
+	/********************End Mouse Messages************************/
+
+	/********************Keyboard Messages*************************/
+	case WM_KEYDOWN:
+	case WM_SYSKEYDOWN: // keys like Alt and fuctions buttons "F2"
+		if (!(lParam & 0x40000000) || kbd.AutorepeatIsEnabled())
+		{
+			kbd.OnKeyPressed(static_cast<unsigned char>(wParam));
+		}
+		break;
+
+	case WM_KEYUP:
+	case WM_SYSKEYUP:
+		kbd.OnKeyReleased(static_cast<unsigned char>(wParam));
+		break;
+
+	case WM_CHAR:
+		kbd.OnChar(static_cast<unsigned char>(wParam));
+		break;
+
+	case WM_KILLFOCUS:
+		kbd.ClearState();
+		break;
+	/********************End Keyboard Messages********************/
 	case WM_CLOSE:
 		PostQuitMessage(17);
 		return 0;

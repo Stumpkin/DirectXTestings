@@ -1,4 +1,5 @@
 #include "Window.h"
+#include <sstream>
 
 using namespace std;
 
@@ -14,8 +15,30 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 		{
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
-		}
 
+			//you can do stuff in here
+			/*
+			while (!wnd.mouse.IsEmpty())
+			{
+				const auto e = wnd.mouse.Read();
+				if (e.GetType() == Mouse::Event::Type::Move)
+				{
+				}
+			}
+			*/
+			//pressing space generates a messagebox
+			/*
+			if (wnd.kbd.KeyIsPressed(VK_SPACE))
+			{
+				MessageBox(nullptr, "WHAT HAPPON?!", "Space", MB_OK);
+			}
+
+			if (wnd.kbd.KeyIsPressed(VK_MENU))
+			{
+				MessageBox(nullptr, "!?NOPPAH TAWH", "ALT", MB_OK);
+			}
+			*/
+		}
 		return (int)msg.wParam;
 	}
 
